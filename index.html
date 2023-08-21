@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment-5</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<body>
+	<!-- navbar section --> 
+	<header>
+		<div class="w-[1200px] h-80 mx-auto  mt-12">
+			<div class="flex flex-col md:flex-row justify-center items-center">
+				<div class="flex-1">
+					<h1 class="text-3xl text-center">---SALE FEVER---</h1>
+					<p class="text-2xl font-medium text-center mt-6">Purchase TK 200 or above & get <span
+							class="text-red-400">20% off</span> </p>
+					<div class="flex justify-center items-center mt-6 gap-3">
+						<p class="font-medium">Use Promo Code</p>
+						<button class="btn btn-error text-white">SELL200</button>
+					</div>
+				</div>
+				<div class="">
+					<img class="w-80" src="./images/Summer 1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End the header section -->
+	<section>
+		  <h1 class=" font-medium ml-12">Kitchenware</h1>
+		<div class="w-[1200px] mx-auto mt-20 flex justify-center items-center gap-20">
+			<div class="grid  grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-12">
+				<div class="card w-60 bg-base-100 shadow-xl">
+
+					<figure><img src="./images/prod1.png" alt="Shoes" /></figure>
+					<div class="text-center">
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<div class="card-body">
+						<h2 onclick="handleclick(this)">k.Accesoreis</h2>
+						<p></p>
+						<div class="card-actions justify-end">
+							<button> 39.00 Tk</button>
+						</div>
+					</div>
+				</div>
+				<div class="card w-60 bg-base-100 shadow-xl">
+					<figure><img src="./images/prod2.png" alt="Shoes" /></figure>
+					<div class="text-center">
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<div class="card-body">
+						<h2 onclick="handleclick(this)">k.Accesoreis</h2>
+						<p></p>
+						<div class="card-actions justify-end">
+							<button> 25.00 Tk</button>
+						</div>
+					</div>
+				</div>
+				<div class="card w-60 bg-base-100 shadow-xl">
+					<figure><img src="./images/prod3.png" alt="Shoes" /></figure>
+					<div class="text-center">
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<div class="card-body">
+						<h2 onclick="handleclick(this)">Home cooker</h2>
+						<p></p>
+						<div class="card-actions justify-end">
+							<button> 49.00 Tk</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-48 mb-16 flex-1 gap-9 ">
+
+				<div>
+					<h2 class="font-medium ">Have coupon?</h2>
+					<div class="form-control">
+						<label class="label">
+							<span class="label-text"></span>
+						</label>
+						<label class="input-group">
+							<input id="input-field" type="text" placeholder="coupon code"
+								class="input input-bordered" />
+							<span id="apply-btn" class="bg-red-500 text-white">Apply</span>
+						</label>
+					</div>
+				</div>
+				<div class="card w-60 bg-base-100 shadow-xl  h-80">
+					<figure></figure>
+					<div class="card-body">
+						<h2 class="card-title"></h2>
+						<div id="selected-item-container"></div>
+						<hr>
+						<li>Total price : <span id="total-price"></span></li>
+						<li>Discount : <span id="discount-price"></span></li>
+						<li>Total : <span id="grand-total"></span></li>
+						<div class="card-actions justify-end">
+							<button class="bg-red-500 w-full p-2 rounded text-white">Make Purchase</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="w-[1200px] mx-auto mt-12">
+		<!-- second card section -->
+		<h1 class="font-bold ml-6">Sportswear</h1>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 font-bold">
+			<div class="card card-compact w-60 bg-base-100 shadow-xl">
+				<div class="card w-60 bg-base-100 shadow-xl">
+					<figure><img src="./images/prod4.png" alt="Shoes" /></figure>
+					<div class="text-center">
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<div class="card-body">
+						<h2 onclick="handleclick(this)">Sports Back Cap</h2>
+						<p></p>
+						<div class="card-actions justify-end">
+							<button> 49.00 Tk</button> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card card-compact w-60 bg-base-100 shadow-xl">
+				<div class="card w-60 bg-base-100 shadow-xl">
+					<figure><img src="./images/prod5.png" alt="Shoes" /></figure>
+					<div class="text-center">
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<div class="card-body">
+						<h2 onclick="handleclick(this)">Full Jersey Set</h2>
+						<p></p>
+						<div class="card-actions justify-end">
+							<button> 69.00 Tk</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card card-compact w-60 bg-base-100 shadow-xl">
+				<div class="card w-60 bg-base-100 shadow-xl">
+					<figure><img src="./images/prod6.png" alt="Shoes" /></figure>
+					<div class="text-center">
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<div class="card-body">
+						<h2 onclick="handleclick(this)">Sports cates</h2>
+						<p></p>
+						<div class="card-actions justify-end">
+							<button> 159.00 Tk</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/impact.js"></script>
+
+	<script src="js/calculation.js"></script>
+</body>
+
+</html> 
